@@ -33,7 +33,7 @@ const Note = mongoose.model("Note",noteSchema);
 
 //Manipulating requests made on the server :-
 app.get("/",function(req,res){
-    res.send("<h1><center>Click Here !!</center></h1>");
+    res.send("<h1><center><a href='https://note-vault.netlify.app/'>Click Here!!</a></center></h1>");
 });
 app.get("/notes",function(req,res){
     //we retrieve the data from the notesDB and send the documents 
