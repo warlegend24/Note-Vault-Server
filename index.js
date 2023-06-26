@@ -32,7 +32,9 @@ const Note = mongoose.model("Note",noteSchema);
 
 
 //Manipulating requests made on the server :-
-
+app.get("/",function(req,res){
+    res.send("<h1><center>Click Here !!</center></h1>");
+});
 app.get("/notes",function(req,res){
     //we retrieve the data from the notesDB and send the documents 
     Note.find({})
